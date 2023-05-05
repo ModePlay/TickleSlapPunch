@@ -14,9 +14,19 @@ body {
     background-color: teal;   
 }
 
+/* GLOBAL STYLES */
+body {
+  font-family: helvetica, arial, sans;
+}
+h1 {
+  font-size: 5vw;
+  margin-top: 0;
+}
+
 /* HERO STYLES */
 .full-hero {
-  height: 50vh;
+  background-color: red;
+  height: 10vh;
 }
 
 /* BESTIE STYLES  */
@@ -25,6 +35,55 @@ body {
   margin: auto;
   max-width: 960px;
   overflow: hidden;
+}
+
+.bestie-right-hand {
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  margin: 40px 1% 0;
+  padding: 2%;
+  width: 23%;
+}
+.bestie-face {
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  margin: 40px 1% 0;
+  padding: 2%;
+  width: 23%;
+}
+.bestie-left-hand {
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  margin: 40px 1% 0;
+  padding: 2%;
+  width: 23%;
+}
+
+/* PLAY AREA STYLES */
+.play-area {
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  margin: 40px 1% 0;
+  padding: 2%;
+  width: 23%;
+}
+
+/* CHAT AREA STYLES */
+.chat-area {
+  /* border: 1px solid black;
+  box-sizing: border-box; */
+  font-size: 1rem;
+  /* margin: 40px 1% 0; */
+  padding: 2%;
+  width: 23%;
 }
 
 .grid-container {

@@ -11,32 +11,44 @@
         <p id="npcScore"></p>
         <p id="yourScore"></p>
     </div>
-    <div class="bestie-wrapper">
-
-        </div>
-        <div id="chat" class="npcDialogue"><h2>'Hey! Want to<br>be friends?'</h2></div>
-        <div class="npcRighthand"><img class="npcRighthand" id="npcRighthand" src="righttickle.svg"></div>  
-        <div class="npcFace"><img class="npcFace" id="npcFace" src="greeting.svg"></div>
-        <div class="npcLefthand"><img class="npcLefthand" id="npcLefthand" src="lefttickle.svg"></div>
-        <div class="playerInteraction">
-            <div style="text-align: center;">
-                <h6>If the timer reaches zero, I, your new Bestest-Bestie, gain a FREE point! 
-                    Yay Me! <br>First to 5 wins.</h6>
-                <h1>
-                    <span class="minutes">00</span>
-                    <span class="seconds">00</span>
-                    <br />
-                    <button class="pause">"Wait!"</button>
-                    <button class="resume">"Resume."</button>
-                    <button class="reset">*Spin Move*</button>
-                </h1>
-                <input id="name" type="text" autocomplete="off">
-                    <button id="goBtn" onclick="go()">Commit</button>
-                <h6>Type Tickle, Slap or Punch and press 'Commit' to play with me. Don't be shy, 
-                    you'll learn as we go. But no biting or wrong-typed words allowed!</h6>      
-            </div>
+    <div class="chat-area">
+        <div id="chat" class="npcDialogue"><h2>'Hey! Want to<br>be friends?'</h2>
         </div>
     </div>
+    </div>
+    <div class="bestie-wrapper">
+        <div class="bestie-right-hand">
+            <div class="npcRighthand"><img class="npcRighthand" id="npcRighthand" src="righttickle.svg">
+            </div> 
+        </div>
+        <div class="bestie-face">
+            <div class="npcFace"><img class="npcFace" id="npcFace" src="greeting.svg">
+            </div>
+        </div>
+        <div class="bestie-left-hand">
+            <div class="npcLefthand"><img class="npcLefthand" id="npcLefthand" src="lefttickle.svg">
+            </div>
+        </div>
+        <div class="play-area">
+            <div class="playerInteraction">
+                <div style="text-align: center;">
+                    <h6>If the timer reaches zero, I, your new Bestest-Bestie, gain a FREE point! 
+                        Yay Me! <br>First to 5 wins.</h6>
+                    <h1>
+                        <span class="minutes">00</span>
+                        <span class="seconds">00</span>
+                        <br />
+                        <button class="pause">"Wait!"</button>
+                        <button class="resume">"Resume."</button>
+                        <button class="reset">*Spin Move*</button>
+                    </h1>
+                    <input id="name" type="text" autocomplete="off">
+                        <button id="goBtn" onclick="go()">Commit</button>
+                    <h6>Type Tickle, Slap or Punch and press 'Commit' to play with me. Don't be shy, 
+                        you'll learn as we go. But no biting or wrong-typed words allowed!</h6>      
+                </div>
+            </div>
+        </div>
     <script src="index.js"></script>
 </body>
 <!--
