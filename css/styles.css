@@ -78,10 +78,11 @@ h1 {
 
 /* CHAT AREA STYLES */
 .chat-area {
-  /* border: 1px solid black;
-  box-sizing: border-box; */
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
   font-size: 1rem;
-  /* margin: 40px 1% 0; */
+  margin: 40px 1% 0;
   padding: 2%;
   width: 23%;
 }
