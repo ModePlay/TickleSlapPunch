@@ -44,7 +44,7 @@ h1 {
   font-size: 1rem;
   margin: 40px 1% 0;
   padding: 2%;
-  width: 23%;
+  width: 18%;
 }
 .bestie-face {
   border: 1px solid black;
@@ -53,7 +53,7 @@ h1 {
   font-size: 1rem;
   margin: 40px 1% 0;
   padding: 2%;
-  width: 23%;
+  width: 18%;
 }
 .bestie-left-hand {
   border: 1px solid black;
@@ -62,7 +62,7 @@ h1 {
   font-size: 1rem;
   margin: 40px 1% 0;
   padding: 2%;
-  width: 23%;
+  width: 18%;
 }
 
 /* PLAY AREA STYLES */
@@ -73,7 +73,7 @@ h1 {
   font-size: 1rem;
   margin: 40px 1% 0;
   padding: 2%;
-  width: 23%;
+  width: 18%;
 }
 
 /* CHAT AREA STYLES */
@@ -84,7 +84,7 @@ h1 {
   font-size: 1rem;
   margin: 40px 1% 0;
   padding: 2%;
-  width: 23%;
+  width: 18%;
 }
 
 .grid-container {
