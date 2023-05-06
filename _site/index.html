@@ -16,52 +16,53 @@
         <p id="yourScore"></p>
     </div>
     <div class="bestie-wrapper">
-        <div class="chat-area">
-            <div id="chat" class="npcDialogue"><h2>'Hey! Want to<br>be friends?'</h2>
-            </div>
-        </div>
-        <div class="bestie-right-hand">
-            <div class="npcRighthand"><img class="npcRighthand" id="npcRighthand" src="righttickle.svg">
-            </div> 
-        </div>
-        <div class="bestie-face">
-            <div class="npcFace"><img class="npcFace" id="npcFace" src="greeting.svg">
-            </div>
-        </div>
-        <div class="bestie-left-hand">
-            <div class="npcLefthand"><img class="npcLefthand" id="npcLefthand" src="lefttickle.svg">
-            </div>
-        </div>
-        <div class="play-area">
-            <div class="playerInteraction">
-                <div style="text-align: center;">
-                    <h6>If the timer reaches zero, I, your new Bestest-Bestie, gain a FREE point! 
-                        Yay Me! <br>First to 5 wins.</h6>
-                    <h1>
-                        <span class="minutes">00</span>
-                        <span class="seconds">00</span>
-                        <br />
-                        <button class="pause">"Wait!"</button>
-                        <button class="resume">"Resume."</button>
-                        <button class="reset">*Spin Move*</button>
-                    </h1>
-                    <input id="name" type="text" autocomplete="off">
-                        <button id="goBtn" onclick="go()">Commit</button>
-                    <h6>Type Tickle, Slap or Punch and press 'Commit' to play with me. Don't be shy, 
-                        you'll learn as we go. But no biting or wrong-typed words allowed!</h6>      
+        <div class="chat-area-wrapper">
+            <div class="chat-area">
+                <div id="chat" class="npcDialogue">'Hey! Wanna Play?<br>Try to Tickle, Slap or Punch me!'
                 </div>
             </div>
         </div>
+        <div class="bestie-face">
+            <div class="npcFace"><img class="npcFace" id="npcFace" src="greeting.svg">
+                <div class="bestie-right-hand">
+                    <div class="npcRighthand"><img class="npcRighthand" id="npcRighthand" src="righttickle.svg">
+                    </div> 
+                </div>
+                <div class="bestie-left-hand">
+                    <div class="npcLefthand"><img class="npcLefthand" id="npcLefthand" src="lefttickle.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="play-area-wrapper">
+            <div class="play-area">
+                <div class="player-interaction">
+                    <div>
+                            <p class="win-condition">First to 5 wins!</p>
+                        <h1>
+                            <span class="minutes">00</span>
+                            <span class="seconds">00</span>
+                            <br />
+                            <button class="pause">"Wait!"</button>
+                            <button class="resume">"Resume."</button>
+                            <button class="reset">*Spin Move*</button>
+                        </h1>
+                        <input id="name" type="text" autocomplete="off">
+                            <button id="goBtn" onclick="go()">Commit</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 <!--
-    Tickle, Slap, Punch by Rob Guarino April, 2022 for The Odin Project Rock Paper Scissors challenge.
-Thank you to all contributors to TOP for maintaining a free and practical beginner outreach to programming.
-Thanks as well to all individual knowledge sharers and those found in communities such as StackOverflow and
-W3Schools. That's just to say they've all helped me in some way to push through what I did not understand.
-All shortcomings of this code are my own but satisfy the scope of this project, from which I look forward to improve.
-Special thanks to 'Wet Bulb Temperature' for their timer tutorial https://www.youtube.com/watch?v=sRdCCVGuqHc
-Vector graphics Emoticons and Fist from OpenClipart-Vectors at pixabay. Hearts from Clker-Free-Vector-Images and Maiconfz.
-Thanks for playing!
+    "Tickle, Slap, Punch"
+    Rob Guarino April, 2022 for The Odin Project Rock Paper Scissors challenge.
+    Thanks to all individual knowledge sharers in communities such as StackOverlow and W3Schools.
+    Special thanks 'Wet Bulb Temperature' for timer tutorial https://www.youtube.com/watch?v=sRdCCVGuqHc
+    Vector graphics Emoticons from OpenClipart-Vectors at pixabay. 
+    Hearts from Clker-Free-Vector-Images and Maiconfz.
+    Thanks for playing!
 -->
 </html>
