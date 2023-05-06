@@ -1,0 +1,129 @@
+/* GLOBAL STYLES */
+body {
+  font-family: helvetica, arial, sans;
+  background-color: #008080;
+}
+h1 {
+  font-size: 5vw;
+  margin-top: 0;
+}
+
+/* HERO STYLES */
+.full-hero {
+  background-color: red;
+  height: 10vh;
+}
+
+/* BESTIE STYLES  */
+.bestie-wrapper {
+  font-size: 24px;
+  margin: auto;
+  max-width: 1080px;
+  overflow: visible;
+}
+.bestie-face {
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  padding: 2%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 38%;
+}
+.bestie-right-hand {
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  position: absolute;
+  top: 175px;
+  left: -150px;
+  padding: 2%;
+  width: 78%;
+}
+.bestie-left-hand {
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  position: absolute;
+  top: 175px;
+  left: 250px;
+  padding: 2%;
+  width: 78%;
+}
+
+/* PLAY AREA STYLES */
+.play-area-wrapper {
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  margin: 40px 1% 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  width: 28%;
+}
+.play-area {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.player-interaction {
+  text-align: center;
+}
+.win-condition {
+  text-align: center;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+/* CHAT AREA STYLES */
+.chat-area-wrapper {
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  margin: 40px 1% 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  width: 28%;
+}
+.chat-area {
+  font-size: 3rem;
+  position: absolute;
+  top: 100px;
+  left: -75px;
+  z-index: 100;
+}
+.npcDialogue { 
+  color: white;
+  text-align: center;
+}
+
+/* JAVASCRIPT HANDLING */
+#npcRighthand {
+  background-clip: content-box;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+#npcLefthand {
+  background-clip: content-box;
+  justify-self: start;
+  align-self: end;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+#npcScore{
+  color: white;
+}
+#yourScore {
+  color: white;
+}
+#count {
+  columns: white;
+}
