@@ -11,14 +11,12 @@
 <body>
     <div class="full-hero hero-home">
         <h1><u><em>Tickle, Slap, Punch!</em></u></h1>
-        <p><h6><em>*A Rock, Paper, Scissors Adaptation*</em></h6></p>
-        <p id="npcScore"></p>
-        <p id="yourScore"></p>
+        <h6><em>*A Rock, Paper, Scissors Adaptation*</em></h6>
     </div>
     <div class="bestie-wrapper">
         <div class="chat-area-wrapper">
             <div class="chat-area">
-                <div id="chat" class="npcDialogue">'Hey! Wanna Play?<br>Try to Tickle, Slap or Punch me!'
+                <div id="chat" class="npcDialogue shadow-text">'Hey! Wanna Play?<br>Try to Tickle, Slap or Punch me!'
                 </div>
             </div>
         </div>
@@ -36,19 +34,21 @@
         </div>
         <div class="play-area-wrapper">
             <div class="play-area">
-                <div class="player-interaction">
+                <div>
                     <div>
-                            <p class="win-condition">First to 5 wins!</p>
+                        <p class="win-condition shadow-text">First to 5 wins!</p>
                         <h1>
                             <span class="minutes">00</span>
                             <span class="seconds">00</span>
-                            <br />
+                            <p id="npcScore" class="shadow-text">Bestie Score = 0</p>
+                            <p id="yourScore" class="shadow-text">Your Score = 0</p> 
                             <button class="pause">"Wait!"</button>
                             <button class="resume">"Resume."</button>
                             <button class="reset">*Spin Move*</button>
                         </h1>
                         <input id="name" type="text" autocomplete="off">
-                            <button id="goBtn" onclick="go()">Commit</button>    
+                            <button id="goBtn" onclick="go()">Commit</button>
+                            <p><br></p>   
                     </div>
                 </div>
             </div>

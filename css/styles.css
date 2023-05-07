@@ -4,14 +4,18 @@ body {
   background-color: #008080;
 }
 h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin-top: 0;
+  text-align: center;
 }
 
 /* HERO STYLES */
 .full-hero {
-  background-color: red;
   height: 10vh;
+  padding: 1%;
+  text-align: center;
+  transform: translate(75%, 0%);
+  width: 36vw;
 }
 
 /* BESTIE STYLES  */
@@ -39,7 +43,7 @@ h1 {
   /* top: 175px;
   left: -150px; */
   padding: 2%;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -70%);
   width: 78%;
 }
 .bestie-left-hand {
@@ -50,7 +54,7 @@ h1 {
   /* top: 175px;
   left: 250px; */
   padding: 2%;
-  transform: translate(60%, -50%);
+  transform: translate(75%, -69%);
   width: 78%;
 }
 
@@ -64,21 +68,27 @@ h1 {
   top: 0;
   left: 0;
   padding: 2%;
+  text-align: center;
   width: 28%;
 }
 .play-area {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  /* top: 10px;
+  left: 10px; */
+  transform: translate(0%, 0%);
+  z-index: 110;
 }
-.player-interaction {
+/* .player-interaction {
   text-align: center;
-}
+} */
 .win-condition {
   text-align: center;
   color: #fff;
-  font-size: xx-large;
+  font-size: 3vw;
   font-weight: bolder;
+}
+.shadow-text {
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
 }
 
 /* CHAT AREA STYLES */
@@ -107,7 +117,7 @@ h1 {
   text-align: center;
 }
 
-/* JAVASCRIPT HANDLING */
+/* JAVASCRIPT IDs */
 #npcRighthand {
   background-clip: content-box;
   height: 100%;
@@ -115,18 +125,26 @@ h1 {
   z-index: 10;
 }
 #npcLefthand {
-  background-clip: content-box;
-  justify-self: start;
-  align-self: end;
+  /* background-clip: content-box; */
+  /* justify-self: start;
+  align-self: end; */
   height: 100%;
   width: 100%;
   z-index: 10;
 }
 #npcScore{
-  color: white;
+  text-align: center;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+  color: #000;
+  font-size: 2.5vw;
+  font-weight: bolder;
 }
 #yourScore {
-  color: white;
+  text-align: center;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+  color: #000;
+  font-size: 2.5vw;
+  font-weight: bolder;
 }
 #count {
   columns: white;
