@@ -9,46 +9,54 @@
     <title>Tickle, Slap, Punch!</title>
 </head>
 <body>
-    <div class="full-hero hero-home">
-        <h1><u><em>Tickle, Slap, Punch!</em></u></h1>
-        <h6><em>*A Rock, Paper, Scissors Adaptation*</em></h6>
-    </div>
-    <div class="bestie-wrapper">
-        <div class="chat-area-wrapper">
-            <div class="chat-area">
-                <div id="chat" class="npcDialogue shadow-text">'Hey! Wanna Play?<br>Try to Tickle, Slap or Punch me!'
-                </div>
-            </div>
+    <div class="backdrop">
+        <div class="full-hero hero-home">
+            <h1><u><em>Tickle, Slap, Punch!</em></u></h1>
+            <h6><em>*A Rock, Paper, Scissors Adaptation*</em></h6>
         </div>
-        <div class="bestie-face">
-            <div class="npcFace"><img class="npcFace" id="npcFace" src="greeting.svg">
-                <div class="bestie-right-hand">
-                    <div class="npcRighthand"><img class="npcRighthand" id="npcRighthand" src="righttickle.svg">
-                    </div> 
-                </div>
-                <div class="bestie-left-hand">
-                    <div class="npcLefthand"><img class="npcLefthand" id="npcLefthand" src="lefttickle.svg">
+        <div class="bestie-wrapper">
+            <div class="chat-area-wrapper">
+                <div class="chat-area">
+                    <div id="chat" class="npcDialogue shadow-text">'Hey! Wanna Play?<br>Try to Tickle, Slap or Punch me!'
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="play-area-wrapper">
-            <div class="play-area">
-                <div>
+            <div class="bestie-face">
+                <div class="npcFace"><img class="npcFace" id="npcFace" src="greeting.svg">
+                    <div class="bestie-right-hand">
+                        <div class="npcRighthand"><img class="npcRighthand" id="npcRighthand" src="righttickle.svg">
+                        </div> 
+                    </div>
+                    <div class="bestie-left-hand">
+                        <div class="npcLefthand"><img class="npcLefthand" id="npcLefthand" src="lefttickle.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="play-area-wrapper">
+                <div class="play-area">
                     <div>
-                        <p class="win-condition shadow-text">First to 5 wins!</p>
-                        <h1>
-                            <span class="minutes">00</span>
-                            <span class="seconds">00</span>
-                            <p id="npcScore" class="shadow-text">Bestie Score = 0</p>
-                            <p id="yourScore" class="shadow-text">Your Score = 0</p> 
-                            <button class="pause">"Wait!"</button>
-                            <button class="resume">"Resume."</button>
-                            <button class="reset">*Spin Move*</button>
-                        </h1>
-                        <input id="name" type="text" autocomplete="off">
-                            <button id="goBtn" onclick="go()">Commit</button>
-                            <p><br></p>   
+                        <div>
+                            <p class="win-condition shadow-text">First to 5 wins!</p>
+                            <h1>
+                                <span class="minutes">00</span>
+                                <span class="seconds">00</span>
+                                <p id="npcScore" class="shadow-text">Bestie Score = 0</p>
+                                <p id="yourScore" class="shadow-text">Your Score = 0</p> 
+                                <button class="pause">"Wait!"</button>
+                                <button class="resume">"Resume."</button>
+                                <button class="reset">*Spin Move*</button>
+                            </h1>
+                            <input id="name" type="text" autocomplete="off">
+                                <button id="goBtn" onclick="go()">Commit</button>
+                                <p>
+                                    <!-- <form>
+                                    Choose your favorite subject:
+                                    <button name="subject" type="submit" value="fav_HTML">HTML</button>
+                                    <button name="subject" type="submit" value="fav_CSS">CSS</button>
+                                    </form> -->
+                                </p>    
+                        </div>
                     </div>
                 </div>
             </div>

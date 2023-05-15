@@ -1,12 +1,20 @@
 /* GLOBAL STYLES */
 body {
   font-family: helvetica, arial, sans;
-  background-color: #008080;
+  /* background-color: #008080; */ 
+  position: relative;
+
 }
 h1 {
   font-size: 4vw;
   margin-top: 0;
   text-align: center;
+}
+.backdrop {
+  background-image: url(/images/tsp-cityscape.png);
+  background-position: center bottom;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* HERO STYLES */
@@ -16,6 +24,9 @@ h1 {
   text-align: center;
   transform: translate(26%, 0%);
   width: 60vw;
+}
+.hero-home {
+
 }
 
 /* BESTIE STYLES  */
