@@ -1,9 +1,17 @@
 /* GLOBAL STYLES */
 body {
+  display: flex;
+  flex-direction: column;
   font-family: helvetica, arial, sans;
-  /* background-color: #008080; */ 
-  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
+}
+.content-container {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
 }
 h1 {
   font-size: 4vw;
@@ -11,121 +19,113 @@ h1 {
   text-align: center;
 }
 .backdrop {
-  background-image: url(/tsp-street.jpg);
-  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  color: red;
+  position: relative;
   height: 100vh;
+  text-align: center;
   width: 100vw;
 }
-
-/* HERO STYLES */
-.full-hero {
-  height: 10vh;
-  padding: 1%;
-  text-align: center;
-  transform: translate(26%, 0%);
-  width: 60vw;
-}
-.hero-home {
-
+.backdrop-game {
+  background-image: url(/tsp-street.jpg);
+  background-position: center center;
 }
 
-/* BESTIE STYLES  */
-.bestie-wrapper {
-  font-size: 24px;
-  margin: auto;
-  max-width: 1080px;
-  overflow: visible;
-}
-.bestie-face {
-  box-sizing: border-box;
-  float: left;
-  font-size: 1rem;
-  padding: 2%;
+/* COLUMN STYLES */
+.game-top {
+  flex-direction: row;
+  height: 60vh;
+  margin-bottom: -20%;
   position: relative;
-  top: 0;
-  left: 0;
-  width: 38%;
+  width: 100vw;
 }
-.bestie-right-hand {
-  box-sizing: border-box;
-  float: left;
-  font-size: 1rem;
-  position: absolute;
-  /* top: 175px;
-  left: -150px; */
-  padding: 2%;
-  transform: translate(-55%, -70%);
-  width: 78%;
-}
-.bestie-left-hand {
-  box-sizing: border-box;
-  float: left;
-  font-size: 1rem;
-  position: absolute;
-  /* top: 175px;
-  left: 250px; */
-  padding: 2%;
-  transform: translate(75%, -69%);
-  width: 78%;
-}
-
-/* PLAY AREA STYLES */
-.play-area-wrapper {
-  box-sizing: border-box;
-  float: left;
-  font-size: 1rem;
-  margin: 40px 1% 0;
+.game-bottom {
+  flex-direction: row;
+  height: 20vh;
   position: relative;
-  top: 0;
-  left: 0;
-  padding: 2%;
-  text-align: center;
-  width: 28%;
+  width: 100vw;
+  z-index: 100;
 }
-.play-area {
-  position: absolute;
-  /* top: 10px;
-  left: 10px; */
-  transform: translate(0%, 0%);
-  z-index: 110;
+.game-col-trio {
+  display: flex;
+  flex: 1;
 }
-/* .player-interaction {
-  text-align: center;
-} */
-.win-condition {
-  text-align: center;
-  color: #fff;
-  font-size: 3vw;
-  font-weight: bolder;
+.col {
+  padding: 2em;
 }
-.shadow-text {
-  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+.game-col-trio .col-chat {
+  flex: 1 0.25 15em;
+}
+.game-col-trio .col-bestie {
+  flex: 1.25 0.25 20em;
+}
+.game-col-trio .col-score {
+  flex: 0.75 1 15em;
+}
+.game-col-trio .col-tickle {
+  flex: 0 1 20em;
+}
+.game-col-trio .col-hug {
+  flex: 0 1 20em;
+}
+.game-col-trio .col-punch {
+  flex: 0 1 15em;
 }
 
 /* CHAT AREA STYLES */
-.chat-area-wrapper {
+.chat-content img {
   box-sizing: border-box;
-  float: left;
-  font-size: 1rem;
-  margin: 40px 1% 0;
+  transform: translate(19%, -20%);
+  width: 125%;
+}
+.npcDialogue {
   position: relative;
-  top: 0;
-  left: 0;
-  padding: 2%;
-  width: 28%;
-  z-index: 110;
-}
-.chat-area {
-  font-size: 3vw;
-  position: absolute;
-  /* top: 100px;
-  left: -75px; */
-  transform: translate(0%,33%);
-  z-index: 100;
-}
-.npcDialogue { 
-  color: white;
   text-align: center;
+  color: #000;
+}
+.chat-bubble {
+  font-size: 1.25em;
+  position: absolute;
+  padding: 0 0 0 35%;
+  top: 8px;
+  right: 16px;
+}
+
+/* BESTIE FACE AREA STYLES */
+.bestie-face img {
+  box-sizing: border-box;
+  transform: translate(0%, -10%);
+  width: 75%;
+}
+
+/* SCORE AREA STYLES */
+.score-content h1 {
+  box-sizing: border-box;
+  margin-left: -10%;
+  transform: translate(-30%, 0%);
+  width: 100%;
+}
+
+/* TICKLE AREA STYLES */
+.tickle img {
+  box-sizing: border-box;
+  transform: translate(85%, 15%);
+  width: 100%;
+}
+
+/* HUG AREA STYLES */
+.hug img {
+  box-sizing: border-box;
+  transform: translate(46%, 77%);
+  width: 80%;
+}
+
+/* LOVE PUNCH AREA STYLES */
+.punch img {
+  box-sizing: border-box;
+  transform: translate(20%, 50%);
+  width: 10%;
 }
 
 /* JAVASCRIPT IDs */
@@ -136,9 +136,9 @@ h1 {
   z-index: 10;
 }
 #npcLefthand {
-  /* background-clip: content-box; */
-  /* justify-self: start;
-  align-self: end; */
+  background-clip: content-box;
+  justify-self: start;
+  align-self: end;
   height: 100%;
   width: 100%;
   z-index: 10;
